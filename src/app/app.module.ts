@@ -1,24 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { Comp1Component } from './components/comp1/comp1.component';
-import { Comp2Component } from './components/comp2/comp2.component';
-import { Comp3Component } from './components/comp3/comp3.component';
-import { Comp4Component } from './components/comp4/comp4.component';
+import { FormularioComponent } from './components/formulario/formulario.component';
+import { ListaComponent } from './components/lista/lista.component';
+import { ItemComponent } from './components/item/item.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    Comp1Component,
-    Comp2Component,
-    Comp3Component,
-    Comp4Component
+    AppComponent, 
+    FormularioComponent,
+    ListaComponent,
+    ItemComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, 
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
