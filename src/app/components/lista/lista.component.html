@@ -1,1 +1,5 @@
-<p>Lista works!</p>
+<ul>
+    <li *ngFor="let tarea of service.tareas">
+        <app-item [tarea]="tarea"></app-item>
+    </li>
+</ul>
