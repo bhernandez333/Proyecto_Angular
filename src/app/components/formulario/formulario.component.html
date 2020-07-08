@@ -1,8 +1,8 @@
-<p>Componente del Formulario.</p>
+<p>Componente del Formulario.</p>   
 <p>
-    <input type="text" [formControl]="itemAgregar" placeholder="Item a agregar.">
+    <input type="text" name="tarea" [(ngModel)]="descripcion">
     &nbsp; &nbsp;
-    <button type="button" onclick="alert('Agregando item ...')">Agregar</button>
+    <button (click)="procesar()">Agregar</button>
     <br/>
 </p>  
 

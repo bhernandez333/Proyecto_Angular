@@ -7,5 +7,7 @@ import { Tarea } from '../models/tarea';
 export class PrincipalService {
   public tareas: Tarea[];
 
-  constructor() { }
+  constructor() {
+    this.tareas = new Array<Tarea>();
+   }
 }
