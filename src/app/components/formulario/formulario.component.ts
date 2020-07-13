@@ -12,6 +12,7 @@ export class FormularioComponent implements OnInit {
 
   itemAgregar = new FormControl('', []);
   public descripcion: string;
+  public usuario: string;
 
   constructor(private tareaSvc: PrincipalService) { }
 
@@ -25,6 +26,8 @@ export class FormularioComponent implements OnInit {
     console.log(this.descripcion);
     const tarea = new Tarea();
     tarea.descripcion = this.descripcion;
+    tarea.fecha = new Date();
+    tarea.usuario = this.usuario;
     this.tareaSvc.tareas.push(tarea);
     console.log(tarea);
    }
