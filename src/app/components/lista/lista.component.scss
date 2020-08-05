@@ -1,0 +1,20 @@
+header{
+    background: blueviolet ;
+    height: 3px;
+    width: 100%;
+    text-align: center;
+    line-height: 10px;
+    color: white;
+    border-bottom: 3px dashed black;
+}
+
+footer{
+    background: lightsalmon;
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+.clearfix{
+    clear: both;
+}

@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
 import { ListaComponent } from './components/lista/lista.component';
 import { ItemComponent } from './components/item/item.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ItemComponent } from './components/item/item.component';
     BrowserModule,
     AppRoutingModule, 
     ReactiveFormsModule, 
-    FormsModule
+    FormsModule, 
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

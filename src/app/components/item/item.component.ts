@@ -21,7 +21,7 @@ export class ItemComponent implements OnInit {
     this.tareaSvc.tareas = this.tareaSvc.tareas.filter(cadaTarea => {
       return cadaTarea !== this.tarea;
     });
-
+    this.tareaSvc.deleteTarea(this.tarea).subscribe((resp) => console.log('RESPONSE', resp));
   }
 
 }

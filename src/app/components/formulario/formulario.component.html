@@ -1,8 +1,13 @@
-<p>
-    <input type="text" name="tarea" [(ngModel)]="usuario" placeholder="Usuario">
-    <input type="text" name="tarea" [(ngModel)]="descripcion" placeholder="Descripción de la tarea">
-    &nbsp; &nbsp;
-    <button (click)="procesar()">Agregar</button>
-    <br/>
-</p>  
-
+<header>
+    <h1>Proyecto Final Angular - Python</h1>
+    <h6>Bismarck Hernández Montes</h6>
+</header>
+<body>
+    <p>
+        <input type="text" maxlength="30" name="tarea" [(ngModel)]="usuario" placeholder="Usuario">
+        <input type="text" maxlength="100" name="tarea" [(ngModel)]="descripcion" placeholder="Descripción de la tarea">
+        &nbsp; &nbsp;
+        <button (click)="procesar()">Agregar</button>
+        <br/>
+    </p>  
+</body>
